@@ -77,11 +77,6 @@ public class OrderControllerTest {
 
 	}
 
-	@Test
-	public void testGetOrders() throws Exception {
-		mockMvc.perform(get("/api/orders")).andExpect(status().isOk());
-		verify(orderService, times(1)).getAllOrders();
-	}
 	
 	@Test
 	public void testAddOrders() throws Exception {
